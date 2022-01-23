@@ -13,10 +13,10 @@
 # limitations under the License.
 
 # Device path
-DEVICE_PATH := device/motorola/osaka/rootdir
+DEVICE_PATH := device/motorola/guamna/rootdir
 
 DEVICE_PACKAGE_OVERLAYS += \
-    device/motorola/osaka/overlay
+    device/motorola/guamna/overlay
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
@@ -25,17 +25,18 @@ PRODUCT_COPY_FILES := \
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/osaka-kernel/Image:kernel
+    device/motorola/guamna-kernel/Image.gz-dtb:kernel
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    $(DEVICE_PATH)/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf
+    $(DEVICE_PATH)/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(DEVICE_PATH)/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
 # Device Init
 PRODUCT_PACKAGES += \
-    fstab.osaka \
-    vendor-fstab.osaka \
+    fstab.guamna \
+    ramdisk-fstab.guamna \
     init.recovery.qcom.rc
 
 # Telephony Packages (AOSP)
@@ -48,10 +49,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.sf.lcd_density=420
+    ro.sf.lcd_density=280
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/motorola/sm4350-common/platform.mk)
+$(call inherit-product, device/motorola/sm4250-common/platform.mk)
 
 # include board vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/osaka/osaka-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/guamna/guamna-vendor.mk)
