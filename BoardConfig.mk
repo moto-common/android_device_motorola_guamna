@@ -26,12 +26,12 @@ TARGET_BOOTLOADER_BOARD_NAME := guamna
 PRODUCT_PLATFORM := bengal
 
 # Kernel DTB/DTBO
-BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/guamna-kernel
-BOARD_PREBUILT_DTBOIMAGE := device/motorola/guamna-kernel/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/sm4250-common-kernel/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/motorola/sm4250-common-kernel/dtbo.img
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES := \
-    $(wildcard device/motorola/guamna-kernel/modules/*.ko)
+    $(wildcard device/motorola/sm4250-common-kernel/modules/*.ko)
 
 # Partition information
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -61,6 +61,3 @@ BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 52428800
 
 # Reserve space for data encryption (239541551104-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 14919106048
-
-# DTB
-BOARD_PREBUILT_DTBIMAGE_DIR := device/motorola/guamna-kernel
