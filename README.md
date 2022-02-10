@@ -1,4 +1,4 @@
-Moto G Play (2021)
+Moto G Play 2021
 ============
 
 ## Copyrights
@@ -8,4 +8,4 @@ Copyright (C) Sony Mobile Communications 2020
 
 ## Device Tree
 
-Android device configuration for the Moto G Play (bengal platform (**SM4250**)).
+Android device configuration for the Moto G Play 2021 (bengal platform (**SM4250**)).
