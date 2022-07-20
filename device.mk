@@ -15,9 +15,6 @@
 # Device path
 DEVICE_PATH := device/motorola/guamna/rootdir
 
-DEVICE_PACKAGE_OVERLAYS += \
-    device/motorola/guamna/overlay
-
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
@@ -43,6 +40,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     InCallUI \
     Stk
+
+# Overlays
+PRODUCT_PACKAGES += \
+   guamnaFrameworkOverlay \
+   guamnaSystemUIOverlay
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
