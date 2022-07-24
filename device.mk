@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
    guamnaFrameworkOverlay \
+   guamnaMotoActionsOverlay \
    guamnaSystemUIOverlay
 
 PRODUCT_AAPT_CONFIG := normal
