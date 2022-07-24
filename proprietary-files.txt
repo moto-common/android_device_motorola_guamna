@@ -252,6 +252,10 @@ vendor/firmware/novatek_ts_mp.bin
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
+# Sensors
+vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.ssc.so
+
 # Sensor Configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
