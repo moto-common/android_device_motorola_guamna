@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES := \
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/sm4250-common-kernel/bengal-moto-guam-Image.gz-dtb:kernel
+    device/motorola/sm4250-common-kernel/bengal-moto-guamc-Image.gz:kernel
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
