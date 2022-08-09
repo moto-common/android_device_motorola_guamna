@@ -63,6 +63,22 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/hw/camera.qcom.so)
+            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
+            ;;
+
+        vendor/lib64/hw/camera.qcom.so)
+            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
+            ;;
+
+        vendor/lib64/hw/com.qti.chi.override.so)
+            sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper.
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
