@@ -49,10 +49,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.sf.lcd_density=280
+    ro.sf.lcd_density=270
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
