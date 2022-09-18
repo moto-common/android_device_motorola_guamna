@@ -20,9 +20,11 @@ PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
 
+ifeq ($(TARGET_BUILDS_AOSP),true)
 # Kernel
 PRODUCT_COPY_FILES += \
     device/motorola/sm4250-common-kernel/bengal-moto-guamc-Image.gz:kernel
+endif
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
