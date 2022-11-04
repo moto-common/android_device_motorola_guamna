@@ -15,11 +15,6 @@
 # Device path
 DEVICE_PATH := device/motorola/guamna/rootdir
 
-# Device Specific Permissions
-PRODUCT_COPY_FILES := \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
-
 ifeq ($(TARGET_BUILDS_AOSP),true)
 # Kernel
 PRODUCT_COPY_FILES += \
@@ -39,11 +34,6 @@ PRODUCT_PACKAGES += \
     ramdisk-fstab.guamna \
     init.recovery.qcom.rc
 
-# Telephony Packages (AOSP)
-PRODUCT_PACKAGES += \
-    InCallUI \
-    Stk
-
 # Overlays
 PRODUCT_PACKAGES += \
    guamnaFrameworkOverlay \
@@ -56,6 +46,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=270
+
+# Fingerprint
+TARGET_USES_CHIPONE_FINGERPRINT := true
+TARGET_USES_FPC_FINGERPRINT := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
