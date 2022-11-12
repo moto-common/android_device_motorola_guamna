@@ -212,6 +212,32 @@ vendor/lib64/libtfestriping.so
 vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|9877c2850370076a8c63a5e4d1c5e278d98734b5
 
+# Camera - from guam QPZS30.30-Q3-38-69-12
+vendor/lib/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so
+vendor/lib/camera/com.mot.eeprom.mot_s5k4h7_otp_eeprom.so
+vendor/lib/camera/com.qti.sensor.mot_s5k4h7.so
+vendor/lib/camera/com.qti.sensor.mot_s5kgm1st.so
+vendor/lib/camera/com.qti.sensormodule.mot_guam_ov02b1b_ofilm.bin
+vendor/lib/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
+vendor/lib/camera/com.qti.sensormodule.mot_guam_s5k4h7_ofilm.bin
+vendor/lib/camera/com.qti.sensormodule.mot_guam_s5kgm1st_ofilm.bin
+vendor/lib/camera/com.qti.tuned.mot_guam_ov02b1b.bin
+vendor/lib/camera/com.qti.tuned.mot_guam_s5k3l6.bin
+vendor/lib/camera/com.qti.tuned.mot_guam_s5k4h7.bin
+vendor/lib/camera/com.qti.tuned.mot_guam_s5kgm1st.bin
+vendor/lib64/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_otp_eeprom.so
+vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so
+vendor/lib64/camera/com.qti.sensor.mot_s5kgm1st.so
+vendor/lib64/camera/com.qti.sensormodule.mot_guam_ov02b1b_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k4h7_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5kgm1st_ofilm.bin
+vendor/lib64/camera/com.qti.tuned.mot_guam_ov02b1b.bin
+vendor/lib64/camera/com.qti.tuned.mot_guam_s5k3l6.bin
+vendor/lib64/camera/com.qti.tuned.mot_guam_s5k4h7.bin
+vendor/lib64/camera/com.qti.tuned.mot_guam_s5kgm1st.bin
+
 # Camera Configs
 vendor/etc/camera/dual_golden_depth.bin
 
