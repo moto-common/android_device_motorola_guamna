@@ -15,11 +15,9 @@
 # Device path
 DEVICE_PATH := device/motorola/guamna/rootdir
 
-ifeq ($(TARGET_BUILDS_AOSP),true)
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/sm4250-common-kernel/bengal-moto-guamc-Image.gz:kernel
-endif
+    device/motorola/guamna-kernel/Image.gz:kernel
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
