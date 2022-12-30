@@ -48,6 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Fingerprint
 TARGET_USES_CHIPONE_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
+TARGET_USES_GOODIX_FINGERPRINT := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)

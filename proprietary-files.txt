@@ -12,8 +12,6 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
-vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
-vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
 vendor/lib/camera/com.mot.eeprom.mot_dw9763_s5k3l6_eeprom.so
 vendor/lib/camera/com.mot.eeprom.mot_gc5035_otp.so
 vendor/lib/camera/com.mot.eeprom.mot_hi556_otp.so
@@ -213,18 +211,6 @@ vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|9877c2850370076a8c63a5e4d1c5e278d98734b5
 
 # Camera - from guam QPZS30.30-Q3-38-69-12
-vendor/lib/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so
-vendor/lib/camera/com.mot.eeprom.mot_s5k4h7_otp_eeprom.so
-vendor/lib/camera/com.qti.sensor.mot_s5k4h7.so
-vendor/lib/camera/com.qti.sensor.mot_s5kgm1st.so
-vendor/lib/camera/com.qti.sensormodule.mot_guam_ov02b1b_ofilm.bin
-vendor/lib/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
-vendor/lib/camera/com.qti.sensormodule.mot_guam_s5k4h7_ofilm.bin
-vendor/lib/camera/com.qti.sensormodule.mot_guam_s5kgm1st_ofilm.bin
-vendor/lib/camera/com.qti.tuned.mot_guam_ov02b1b.bin
-vendor/lib/camera/com.qti.tuned.mot_guam_s5k3l6.bin
-vendor/lib/camera/com.qti.tuned.mot_guam_s5k4h7.bin
-vendor/lib/camera/com.qti.tuned.mot_guam_s5kgm1st.bin
 vendor/lib64/camera/com.mot.eeprom.mot_dw9767_s5kgm1st_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_otp_eeprom.so
 vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so
@@ -237,6 +223,18 @@ vendor/lib64/camera/com.qti.tuned.mot_guam_ov02b1b.bin
 vendor/lib64/camera/com.qti.tuned.mot_guam_s5k3l6.bin
 vendor/lib64/camera/com.qti.tuned.mot_guam_s5k4h7.bin
 vendor/lib64/camera/com.qti.tuned.mot_guam_s5kgm1st.bin
+
+# Camera - from guamp RPXS31.Q2-58-17-7-3
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov02b10_eeprom.so
+vendor/lib64/camera/com.qti.sensor.mot_ov02b10.so
+vendor/lib64/camera/com.qti.sensormodule.mot_guamp_ov02b10_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guamp_ov02b1b_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guamp_s5k4h7_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guamp_s5kgm1st_ofilm.bin
+vendor/lib64/camera/com.qti.tuned.mot_guamp_ov02b10.bin
+vendor/lib64/camera/com.qti.tuned.mot_guamp_ov02b1b.bin
+vendor/lib64/camera/com.qti.tuned.mot_guamp_s5k4h7.bin
+vendor/lib64/camera/com.qti.tuned.mot_guamp_s5kgm1st.bin
 
 # Camera Configs
 vendor/etc/camera/dual_golden_depth.bin
@@ -254,6 +252,15 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
+
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
+vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
 
 # Firmware
 vendor/firmware/AbovCapSense.BIN
