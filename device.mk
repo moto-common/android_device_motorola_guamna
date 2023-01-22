@@ -17,7 +17,7 @@ DEVICE_PATH := device/motorola/guamna/rootdir
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/guamna-kernel/Image.gz:kernel
+    device/motorola/guamna-kernel/Image.gz-dtb:kernel
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
