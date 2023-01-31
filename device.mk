@@ -30,7 +30,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.guamna \
     ramdisk-fstab.guamna \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.guamna.rc \
+    init.guamna.sh
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -49,6 +51,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 TARGET_USES_CHIPONE_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
 TARGET_USES_GOODIX_FINGERPRINT := true
+
+# Camera
+PRODUCT_PACKAGES += \
+    com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)

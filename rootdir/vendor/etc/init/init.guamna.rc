@@ -1,0 +1,8 @@
+on init
+    start vendor.guamna
+
+service vendor.guamna /vendor/bin/init.guamna.sh
+    class core
+    user root
+    oneshot
+    disabled

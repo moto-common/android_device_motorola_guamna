@@ -216,7 +216,7 @@ vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_otp_eeprom.so
 vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so
 vendor/lib64/camera/com.qti.sensor.mot_s5kgm1st.so
 vendor/lib64/camera/com.qti.sensormodule.mot_guam_ov02b1b_ofilm.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin:vendor/lib64/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k4h7_ofilm.bin
 vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5kgm1st_ofilm.bin
 vendor/lib64/camera/com.qti.tuned.mot_guam_ov02b1b.bin
