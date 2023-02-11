@@ -12,10 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_guamna.mk $(LOCAL_DIR)/hentai_guamna.mk
-
-COMMON_LUNCH_CHOICES += \
-    aosp_guamna-eng \
-    aosp_guamna-userdebug \
-    hentai_guamna-eng \
-    hentai_guamna-userdebug
+PRODUCT_MAKEFILES := $(wildcard device/motorola/targets/devices/guamna/*.mk)
