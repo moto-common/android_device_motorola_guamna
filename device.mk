@@ -15,10 +15,6 @@
 # Device path
 DEVICE_PATH := device/motorola/guamna/rootdir
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    device/motorola/guamna-kernel/Image.gz:kernel
-
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
