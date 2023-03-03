@@ -15,20 +15,6 @@
 # Device path
 DEVICE_PATH := device/motorola/guamna/rootdir
 
-# Audio Configuration
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(DEVICE_PATH)/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(DEVICE_PATH)/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
-    $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-
-# Device Init
-PRODUCT_PACKAGES += \
-    fstab.qcom.ramdisk \
-    fstab.qcom \
-    init.guamna.rc \
-    init.guamna.sh
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
@@ -37,14 +23,27 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=270
 
-# Fingerprint
-TARGET_USES_CHIPONE_FINGERPRINT := true
-TARGET_USES_FPC_FINGERPRINT := true
-TARGET_USES_GOODIX_FINGERPRINT := true
+# Audio Configuration
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(DEVICE_PATH)/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(DEVICE_PATH)/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Camera
 PRODUCT_PACKAGES += \
     com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
+
+# Device Init
+PRODUCT_PACKAGES += \
+    fstab.qcom.ramdisk \
+    fstab.qcom \
+    init.guamna.sh
+
+# Fingerprint
+TARGET_USES_CHIPONE_FINGERPRINT := true
+TARGET_USES_FPC_FINGERPRINT := true
+TARGET_USES_GOODIX_FINGERPRINT := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)

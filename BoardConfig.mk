@@ -12,21 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/motorola/sm4250-common/PlatformConfig.mk
-
-DEVICE_PATH := device/motorola/guamna
-
-TARGET_BOOTLOADER_BOARD_NAME := guamna
-
 # Platform
 PRODUCT_PLATFORM := bengal
+include device/motorola/sm4250-common/PlatformConfig.mk
+
+# Bootloader Name
+TARGET_BOOTLOADER_BOARD_NAME := guamna
+
+# Device Path
+DEVICE_PATH := device/motorola/guamna
 
 # Partition information
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
-BOARD_DTBOIMG_PARTITION_SIZE := 25165824 # (0x1800000)
-
 BOARD_SUPER_PARTITION_SIZE := 10267656192
 BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
 
