@@ -28,9 +28,8 @@ PRODUCT_COPY_FILES += \
 
 # Device Init
 PRODUCT_PACKAGES += \
-    fstab.guamna \
-    ramdisk-fstab.guamna \
-    init.recovery.qcom.rc \
+    fstab.qcom.ramdisk \
+    fstab.qcom \
     init.guamna.rc \
     init.guamna.sh
 
