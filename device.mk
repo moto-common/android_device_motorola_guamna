@@ -34,12 +34,7 @@ PRODUCT_PACKAGES += \
     init.guamna.rc \
     init.guamna.sh
 
-# Overlays
-PRODUCT_PACKAGES += \
-   guamnaFrameworkOverlay \
-   guamnaMotoActionsOverlay \
-   guamnaSystemUIOverlay
-
+# AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
