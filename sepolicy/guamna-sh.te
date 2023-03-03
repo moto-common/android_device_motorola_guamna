@@ -9,6 +9,6 @@ init_daemon_domain(guamna-sh)
 allow guamna-sh vendor_toolbox_exec:file rx_file_perms;
 
 # Mounting
-allow guamna-sh vendor_camera_data_file:file mounton;
+allow guamna-sh vendor_camera_data_file:file { mounton getattr };
 allow guamna-sh proc_filesystems:file r_file_perms;
-
+allow guamna-sh guamna-sh:capability sys_admin;

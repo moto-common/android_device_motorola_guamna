@@ -1,5 +1,6 @@
 # Camera
 /vendor/lib64/camera/com.qti.sensormodule.mot_guamna_s5k3l6_ofilm.bin u:object_r:vendor_camera_data_file:s0
+/vendor/lib64/camera/com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin u:object_r:vendor_camera_data_file:s0
 
 # Init Scripts
 /vendor/bin/init.guamna.sh u:object_r:guamna-sh_exec:s0
