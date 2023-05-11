@@ -37,8 +37,12 @@ TARGET_USES_CHIPONE_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
 TARGET_USES_GOODIX_FINGERPRINT := true
 
+# Model
+PRODUCT_MODEL := moto g play 2021
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/motorola/guamna/guamna-vendor.mk)
