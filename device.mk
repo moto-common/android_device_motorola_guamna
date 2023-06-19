@@ -27,11 +27,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PACKAGES += \
     com.qti.sensormodule.mot_guam_s5k3l6_ofilm.bin
 
-# Device Init
-PRODUCT_PACKAGES += \
-    fstab.qcom.ramdisk \
-    init.guamna.sh
-
 # Fingerprint
 TARGET_USES_CHIPONE_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
