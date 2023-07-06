@@ -35,6 +35,9 @@ TARGET_USES_GOODIX_FINGERPRINT := true
 # Model
 PRODUCT_MODEL := moto g play 2021
 
+# Recovery
+AB_OTA_PARTITIONS += recovery
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
